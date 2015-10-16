@@ -1,4 +1,4 @@
-package org.apache.cordova.toast;
+package org.apache.cordova.toastcordova;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -16,16 +16,18 @@ public class ToastCordova extends CordovaPlugin {
     if (action.equals("short")) {
 
       showToast(msg,Toast.LENGTH_SHORT);
+      return true;
     }
 
     if (action.equals("long")) {
       showToast(msg,Toast.LENGTH_LONG);
+      return true;
     }
 
-
+return false;
   }
 
-  private void showToast(String content,Int size){
+  private void showToast(String content,int size){
   Toast.makeText(context, content, size).show();
   }
 
