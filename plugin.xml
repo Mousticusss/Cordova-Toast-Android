@@ -15,7 +15,7 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="ToastCordova">
-        <param name="android-package" value="org.apache.cordova.toastcordova"/>
+        <param name="android-package" value="org.apache.cordova.ToastCordova"/>
         <param name="onload" value="true"/>
       </feature>
     </config-file>
